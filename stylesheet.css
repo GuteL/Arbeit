@@ -5,11 +5,30 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 body {
     background-color: white;
     color: black;
+}
+
+header {
+    position: fixed; 
+    display: flex;
+    margin-right: 10px;
+    align-items: right;
+    justify-content: flex-start;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    color: black;
+    border-bottom: 1px solid black;
+  
+}   
+
+h2 {
+    margin-left: 30px;
 }
 
 button {
