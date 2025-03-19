@@ -6,11 +6,13 @@ html, body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    z-index: 2;
+    padding: 0;
 }
 
 body {
     background-color: white;
-    color: black;
+    color: black;  
 }
 
 header {
@@ -21,14 +23,31 @@ header {
     justify-content: flex-start;
     top: 0;
     width: 100%;
-    background-color: white;
-    color: black;
+    background-color: rgb(25, 25, 80);
     border-bottom: 1px solid black;
-  
+    z-index: 4;
 }   
+
+header a {
+    text-decoration: none;
+    color: white;
+}
 
 h2 {
     margin-left: 30px;
+}
+
+footer {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(25, 25, 80);
+    color: white;
+    border-top: 1px solid black;
+    z-index: 4;
 }
 
 button {
@@ -38,13 +57,29 @@ button {
     color: white;
     font-size: 80px;
     border-color: white;
+    padding: 10px;
 }
 
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    position: relative;
+    z-index: 2;
+    width: 60%;
+    padding: 20px;
+}
+
+
+
 .dark-mode {
-    background-color: black;
+    background-color: rgb(32, 32, 32);
     color: white;
   }
 
 .dark-mode button {
-    border-color: black;
+    border-color: rgb(32, 32, 32);
 }
